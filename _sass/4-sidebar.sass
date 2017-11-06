@@ -5,7 +5,7 @@
   position: absolute
   top: 0
   bottom: 0
-  left: 0
+  left: -$sidebar-width
   z-index: 20
   width: $sidebar-width
   background: $sidebar-bg
@@ -16,10 +16,14 @@
     float: left
     width: $sidebar-left-width
     height: 100%
+    background: $sidebar-left-bg
   &-right
     float: left
     width: $sidebar-right-width
     height: 100%
+    background: $sidebar-right-bg
+  &.open
+    transform: translateX(100%)
 
 
 // Sidebar Left
