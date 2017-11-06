@@ -1,12 +1,12 @@
 
 #menu
-  display: block
+  display: none
   position: fixed
   top: $menu-top
   right: $menu-right
   z-index: 30
-  width: $menu-size
-  height: $menu-size
+  width: 42px
+  height: 42px
   padding: 0
   background: transparent
   border: none
@@ -17,22 +17,22 @@
   &-icons
     display: block
     width: 200%
-    height: $menu-size
+    height: 42px
     margin-left: -100%
     @extend %icon
     font-size: 24px
-    line-height: $menu-size
+    line-height: 42px
     color: #fff
     background: $sidebar-bg
     overflow: hidden
+    transition: transform .35s $time-function
     &:before
-      @extend %icon-enlarge2
+      @extend %icon-left
       float: left
       width: 50%
     &:after
-      @extend %icon-shrink2
+      @extend %icon-right
       float: left
       width: 50%
-
   &.open > &-icons
     transform: translateX(50%)
