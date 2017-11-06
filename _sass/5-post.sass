@@ -8,6 +8,8 @@
   transition: width .35s $time-function
   // &.fadeIn
   //   animation: fadeIn .6s $time-function
+  &.open
+    width: calc(100% - #{$sidebar-width})
 
 .container
   max-width: $post-max-width
