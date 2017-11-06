@@ -7,6 +7,7 @@ $(function() {
       sidebar = $('#sidebar'),
       main    = $('#main'),
       menu    = $('#menu'),
+      posttoc = $('#post-toc-menu'),
       x1, y1;
 
   // run this function after pjax load.
