@@ -121,7 +121,7 @@ $(function() {
     $('#post-toc').toggleClass('open');
   });
 
-  // Search
+  // Search22
   $('#search-input').on('input', function(e){
     var blogs = $(".toc-link").filter(function() {
       var reg = new RegExp($('#search-input').val(), "i");
