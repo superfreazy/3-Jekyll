@@ -100,16 +100,13 @@ $(function() {
   $('#sidebar-tags').on('click', '.sidebar-tag', function() {
     var filter = $(this).data('filter');
     toc.hide();
-    if (filter === 'recent') {
-      toc.slice(0, {{ site.recent_num }}).fadeIn(350);
+    if (filter === 'all') {
+      toc.fadeIn(350);
     } else {
       $('.toc-link[data-tags~=' + filter + ']').fadeIn(350);
     }
     $(this).addClass('active').siblings().removeClass('active');
   });
-  // Only show recent
-  toc.hide();
-  toc.slice(0, {{ site.recent_num }}).fadeIn(350);
 
   // Menu
   menu.on('click', function() {
